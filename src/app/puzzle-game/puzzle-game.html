@@ -1,0 +1,32 @@
+<div class="wrapper">
+  <div class="grid-container">
+    <ng-container *ngFor="let tile of tiles">
+      <div class="tile-boundary">
+        <div
+          class="grid-item tile"
+          [class.blank-tile]="tile.blank"
+          [style.grid-row]="tile.boundary.row"
+          [style.grid-column]="tile.boundary.column"
+          cdkDrag
+          cdkDragBoundary=".tile-boundary"
+          [cdkDragData]="tile"
+          [cdkDragDisabled]="tile.disabled"
+          [cdkDragLockAxis]="tile.lockAxis"
+          (cdkDragEnded)="dragEnd($event)"
+        >
+          {{ tile.label }}
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<br />
+
+<button mat-raised-button color="primary" (click)="shuffle(tiles)">
+  Shuffle
+</button>
+
+<!-- Copyright 2020 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
