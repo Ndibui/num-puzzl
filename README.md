@@ -9,4 +9,4 @@ It uses the `cdk-drag` component in Angular Material CDK and CSS Grid for aligni
 
 See it in action here: https://num-puzzle.stackblitz.io
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/num-puzzle)
+[Imported from StackBlitz ⚡️](https://stackblitz.com/@Ndibui)
