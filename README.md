@@ -7,6 +7,6 @@ It uses the `cdk-drag` component in Angular Material CDK and CSS Grid for aligni
   <img src="./img/num-puzzle.png" alt="num puzzle" width="333">
 </p>
 
-See it in action here: https://num-puzzle.stackblitz.io
+See it in action here: https://num-puzzl.stackblitz.io
 
 [Imported from StackBlitz ⚡️](https://stackblitz.com/@Ndibui)
