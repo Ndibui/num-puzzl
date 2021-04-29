@@ -1,6 +1,6 @@
-# num-puzzle
+# num-puzzl
 
-num-puzzle is a simple number puzzle game built using Angular Material and CSS Grid. <br>
+num-puzzl is a simple number puzzle game built using Angular Material and CSS Grid. <br>
 It uses the `cdk-drag` component in Angular Material CDK and CSS Grid for aligning the tiles in the layout.
 
 <p>
