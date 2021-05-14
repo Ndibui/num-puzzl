@@ -1,15 +1,12 @@
-import "./polyfills";
+import './polyfills';
 
-import { HttpClientModule } from "@angular/common/http";
-import { NgModule } from "@angular/core";
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { MatNativeDateModule } from "@angular/material/core";
-import { BrowserModule } from "@angular/platform-browser";
-import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { DemoMaterialModule } from "./app/material-module";
-import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from "@angular/material/form-field";
-import { PuzzleGame } from "./app/puzzle-game/puzzle-game";
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { MatButtonModule } from '@angular/material/button';
+import { PuzzleGame } from './app/puzzle-game/puzzle-game';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -18,21 +15,11 @@ import { PuzzleGame } from "./app/puzzle-game/puzzle-game";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule,
-    HttpClientModule,
-    DemoMaterialModule,
-    MatNativeDateModule,
-    ReactiveFormsModule
+    DragDropModule,
+    MatButtonModule
   ],
-  entryComponents: [PuzzleGame],
   declarations: [PuzzleGame],
-  bootstrap: [PuzzleGame],
-  providers: [
-    {
-      provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
-      useValue: { appearance: "fill" }
-    }
-  ]
+  bootstrap: [PuzzleGame]
 })
 export class AppModule {}
 
